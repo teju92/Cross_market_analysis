@@ -66,8 +66,11 @@ streamlit run app.py
 ```
 cross-market-analysis/
 ├── app.py                 # Main Streamlit application
-├── database/              # Database connection and queries
-├── data/                  # Data storage
+├── database/              
+│   ├── connection.py      # MySQL connection handler
+│   ├── queries.py         # SQL query functions
+│   └── schema.sql         # Database schema definitions
+├── data/                  # Data storage and processing
 ├── requirements.txt       # Python dependencies
 └── README.md             # Project documentation
 ```
