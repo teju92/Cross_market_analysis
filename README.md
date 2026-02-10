@@ -13,12 +13,28 @@ This project enables users to analyze and visualize correlations and trends acro
 - **Interactive Dashboard**: User-friendly Streamlit interface for data exploration
 - **Data Processing**: Powered by Pandas for robust data manipulation and analysis
 
-## Tech Stack
-
+### Core Technologies
 - **Python**: Core programming language
-- **MySQL**: Database management
+- **MySQL**: Relational database management
 - **Pandas**: Data manipulation and analysis
 - **Streamlit**: Interactive web application framework
+
+### Data Sources & APIs
+- **CoinGecko API**: Cryptocurrency market data
+- **Yahoo Finance API**: Stock market indices (S&P 500, NASDAQ, NSEI)
+- **Oil Prices Dataset**: Historical daily oil price data (2020-2026)
+
+### Data Sources & APIs
+- **CoinGecko API**: Cryptocurrency market data
+- **Yahoo Finance API**: Stock market indices (S&P 500, NASDAQ, NSEI)
+- **Oil Prices Dataset**: Historical daily oil price data (2020-2026)
+
+### Technical Concepts
+- Data Collection & ETL
+- Database Design & Query Optimization
+- Relational Databases
+- Data Integration & Cleaning
+- Financial Data Analysis
 
 ## Prerequisites
 
