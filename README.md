@@ -44,8 +44,8 @@ Before running this application, ensure you have the following installed:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/cross-market-analysis.git
-cd cross-market-analysis
+ https://github.com/yourusername/cross-market-analysis.git
+cd cross-market-analysis](https://github.com/teju92/Cross_market_analysis.git
 ```
 
 2. Install required Python libraries:
