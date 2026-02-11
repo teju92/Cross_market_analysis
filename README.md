@@ -19,10 +19,6 @@ This project enables users to analyze and visualize correlations and trends acro
 - **Pandas**: Data manipulation and analysis
 - **Streamlit**: Interactive web application framework
 
-### Data Sources & APIs
-- **CoinGecko API**: Cryptocurrency market data
-- **Yahoo Finance API**: Stock market indices (S&P 500, NASDAQ, NSEI)
-- **Oil Prices Dataset**: Historical daily oil price data (2020-2026)
 
 ### Data Sources & APIs
 - **CoinGecko API**: Cryptocurrency market data
