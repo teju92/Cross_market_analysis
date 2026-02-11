@@ -50,9 +50,18 @@ cd cross-market-analysis
 
 2. Install required Python libraries:
 ```bash
-pip install pandas
-mysql-connector-python
-streamlit
+import streamlit as st
+import datetime
+import pandas as pd
+import numpy as py
+import sys
+import yfinance as yf
+import streamlit as st
+import mysql.connector
+import requests
+import time
+import duckdb
+import plotly.express as px
 
 ```
 
