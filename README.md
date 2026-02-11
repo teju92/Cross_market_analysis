@@ -95,39 +95,55 @@ cross-market-analysis/
 
 The MySQL database consists of the following tables:
 
-### Crypto Table
+### Cryptocurrencies table
 ```sql
-CREATE TABLE crypto (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    date DATE NOT NULL,
-    symbol VARCHAR(10),
-    price DECIMAL(15, 2),
-    volume BIGINT,
-    market_cap DECIMAL(20, 2)
+CREATE TABLE cryptocurrencies (
+        id VARCHAR(50) PRIMARY KEY,
+        `rank` INT,
+        symbol VARCHAR(10),
+        name VARCHAR(100),
+        current_price DECIMAL(18, 6),
+        market_cap BIGINT,
+        total_volume BIGINT,
+        circulating_supply DECIMAL(38, 6),
+        total_supply DECIMAL(38, 6),
+        ath DECIMAL(18, 6),
+        atl DECIMAL(18, 6),
+        `date` DATE
+);
+```
+
+###Historical Prices Table
+```sql
+CREATE TABLE historical_Prices (
+        coin_id VARCHAR(50),
+        `date` DATE,
+        price_usd DECIMAL(18, 6),
+        PRIMARY KEY (coin_id, `date`), 
+        CONSTRAINT fk_coin 
+            FOREIGN KEY (coin_id) 
+            REFERENCES Cryptocurrencies(id)
 );
 ```
 
 ### Oil Table
 ```sql
-CREATE TABLE oil (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    date DATE NOT NULL,
-    price DECIMAL(10, 2),
-    volume BIGINT
+CREATE TABLE oil_prices(
+        `date` DATE PRIMARY KEY,
+        Price DECIMAL(18, 6)
 );
 ```
 
 ### Stocks Table
 ```sql
-CREATE TABLE stocks (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    date DATE NOT NULL,
-    symbol VARCHAR(10),
-    open_price DECIMAL(10, 2),
-    close_price DECIMAL(10, 2),
-    high DECIMAL(10, 2),
-    low DECIMAL(10, 2),
-    volume BIGINT
+ CREATE TABLE stock_prices(
+        `date` DATE ,
+        Ticker VARCHAR(20),
+        Open DECIMAL(18, 6),
+        High DECIMAL(18, 6),
+        Low DECIMAL(18, 6),
+        Close DECIMAL(18, 6),
+        Volume BIGINT
 );
 ```
 
